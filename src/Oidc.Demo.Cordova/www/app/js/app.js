@@ -1,6 +1,4 @@
-﻿// AMS App
-
-angular.module('app', [
+﻿angular.module('app', [
     'ng',
     'ionic',
     'app.controllers',
@@ -31,14 +29,14 @@ angular.module('app', [
 .config(['ngOidcClientProvider', function (ngOidcClientProvider) {
 
         ngOidcClientProvider.setSettings({
-            authority: "https://perduco-identityserver-demo.azurewebsites.net/identity",
+            authority: "add your STS authority url here",
             client_id: "oidcdemomobile",
             redirect_uri: "https://localhost/oidc",
             post_logout_redirect_uri: "https://localhost/oidc",
             silent_redirect_uri: "https://localhost/oidc",
 
             response_type: "id_token token",
-            scope: "openid profile email",
+            scope: "openid profile",
 
             automaticSilentRenew: true,
 
