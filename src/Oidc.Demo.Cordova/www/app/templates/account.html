@@ -1,0 +1,27 @@
+<ion-view view-title="Account">
+    <ion-content class="padding">
+        <ion-list>
+            <ion-item class="item item-divider">
+                Login details
+            </ion-item>
+            <ion-item class="item item-text-wrap">
+                <div>
+                    <strong>Name</strong>
+                </div>
+                <div class="small" style="color: gray">
+                    {{userInfo.userData.user.profile["preferred_username"]}}</div>
+            </ion-item>
+            <ion-item class="item item-text-wrap">
+                <div><strong>Token expires at</strong>
+                </div>
+                <div class="small" style="color: gray">{{userInfo.userData.user.expires_at * 1000 | date : 'medium' : timezone
+                    }}
+                </div>
+            </ion-item>
+        </ion-list>
+        <button class="button button-positive button-block" ng-click="logOut()">
+            Log out
+        </button>
+        <pre>{{userInfo | json}}</pre>
+    </ion-content>
+</ion-view>
