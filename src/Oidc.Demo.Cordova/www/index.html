@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+    <title></title>
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <script src="lib/es6-shim/es6-shim.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <script src="app/js/app.js"></script>
+
+    <!-- app component - start -->
+    <!-- app modules -->
+    <script src="app/js/modules/controllersmodule.js"></script>
+    <script src="app/js/modules/servicesmodule.js"></script>
+
+    <!-- libs -->
+    <script src="lib/oidc-client/dist/oidc-client.js"></script>
+
+    <!-- controllers -->
+    <script src="app/js/controllers/loginctrl.js"></script>
+    <script src="app/js/controllers/accountctrl.js"></script>
+    <script src="app/js/controllers/appctrl.js"></script>
+    <script src="app/js/controllers/homectrl.js"></script>
+    <script src="app/js/controllers/menuctrl.js"></script>
+
+    <!-- app services -->
+    <script src="app/js/services/angular-oidc-client.js"></script>
+
+    <!-- app directives -->
+    <!-- app component - end -->
+
+</head>
+
+<body ng-app="app">
+    <ion-nav-view></ion-nav-view>
+</body>
+</html>

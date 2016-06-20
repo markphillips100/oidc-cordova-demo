@@ -1,0 +1,8 @@
+{
+  "name": "oidcdemo",
+  "dependencies": {
+    "ionic": "driftyco/ionic-bower#v1.3.1",
+    "oidc-client": "git+https://github.com/identitymodel/oidc-client-js#1.1.0-beta.1",
+    "es6-shim": "^0.35.1"
+  }
+}
