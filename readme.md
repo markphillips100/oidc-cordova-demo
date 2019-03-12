@@ -1,3 +1,5 @@
+**This project is no longer maintained**
+
 #oidc-cordova-demo
 This is a simple Ionic framework cordova application to demonstrate usage of the library [https://github.com/IdentityModel/oidc-client-js](https://github.com/IdentityModel/oidc-client-js).  The project is built using Tools for Apache Cordova (update 10) in Visual Studio 2015 purely because that is the environment I normally use.
 
